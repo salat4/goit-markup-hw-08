@@ -530,8 +530,7 @@ button {
   position: relative;
   left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
+  width: 90%;
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -545,8 +544,19 @@ button {
 
 @media screen and (max-width: 480px) {
   .backdrop__modal {
-    width: 90%;
     min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 581px) {
+  .backdrop__modal {
+    width: 528px;
   }
 }
 
@@ -816,12 +826,8 @@ button {
   margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop-checkbox {
-    margin-left: 50px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .backdrop-checkbox__inpute {
@@ -835,17 +841,26 @@ button {
   position: absolute;
   width: 16px;
   height: 15px;
-  background-image: url(../../images/box.svg);
+  background-image: url(../images/box.svg);
   background-repeat: no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: -25px;
+  margin-left: -15px;
+  margin-top: -13px;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (min-width: 426px) {
   .backdrop-checkbox__box {
-    margin-left: -15px;
+    margin-left: -18px;
+    margin-top: 1px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop-checkbox__box {
+    margin-left: -25px;
+    margin-top: 1px;
   }
 }
 
@@ -859,16 +874,30 @@ button {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
   letter-spacing: 0.03em;
   color: #757575;
-  text-transform: none;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop-checkbox__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .backdrop-checkbox__text--blue {
   color: #2196f3;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop-checkbox__text--blue {
+    margin-left: 3px;
+  }
 }
 
 .backdrop__button--send {
@@ -981,7 +1010,7 @@ button {
   line-height: 33px;
   text-align: center;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -999,6 +1028,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .client__link {
@@ -1314,6 +1344,17 @@ button {
     margin-top: 60px;
     margin-right: 0;
   }
+}
+
+.footer-left__address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .footer-left__item {
@@ -1645,6 +1686,19 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .header__logo {
@@ -2010,8 +2064,8 @@ button {
   padding-bottom: 118px;
   height: 400px;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero_mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero_mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2019,37 +2073,37 @@ button {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero_mob@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero_mob@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 767px) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero768.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero768.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero768.jpg);
   }
 }
 
 @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero768@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero768@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero768@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero768@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main {
     height: 660px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero1200.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero1200.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero1200@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero1200@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200@2x.jpg);
   }
 }
 
@@ -2081,7 +2135,6 @@ button {
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
-  padding: 10px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -2123,19 +2176,9 @@ button {
   margin-bottom: 40px;
 }
 
-.project-button__list:last-child {
-  margin-top: 15px;
-}
-
 @media screen and (min-width: 768px) {
   .project-button__list {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project-button__list {
-    margin-bottom: 50px;
   }
 }
 
@@ -2158,12 +2201,6 @@ button {
 
 .project-button__item:not(:last-child) {
   margin-right: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .project-button__item {
-    margin-top: 0px;
-  }
 }
 
 .project-button__button {
@@ -2201,6 +2238,7 @@ button {
     display: -webkit-box;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -2223,23 +2261,20 @@ button {
 
 .project__item {
   max-width: 450px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .project__item:nth-child(8n) {
   margin-bottom: 0px;
 }
 
-.project__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .project__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
-    margin-left: 20px;
+    margin-left: 30px;
     max-width: 354px;
+    margin-top: 30px;
   }
 }
 
@@ -2249,6 +2284,16 @@ button {
         flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     max-width: 370px;
+    margin-top: 30px;
+  }
+  .project__item:first-child {
+    margin-top: 50px;
+  }
+  .project__item:nth-child(2) {
+    margin-top: 50px;
+  }
+  .project__item:nth-child(3) {
+    margin-top: 50px;
   }
 }
 
@@ -2391,6 +2436,9 @@ button {
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   margin-top: 30px;
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(100% / 1 - 30px);
+      flex-basis: calc(100% / 1 - 30px);
 }
 
 .team__item img {
@@ -2401,9 +2449,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .team__item {
-    -ms-flex-preferred-size: calc(100% / 2 - 60px);
-        flex-basis: calc(100% / 2 - 60px);
-    margin: 15px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
   }
 }
 
@@ -2423,7 +2470,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -15px;
+  margin-left: -30px;
 }
 
 .team-box {
@@ -2586,7 +2633,7 @@ button {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1.3;
   color: #2196f3;
   text-decoration: none;

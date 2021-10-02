@@ -6,6 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    @media screen and(min-width: 768px) {
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
   }
 }
 .header__logo {
