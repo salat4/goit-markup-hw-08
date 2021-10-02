@@ -1,0 +1,26 @@
+.team-box__list {
+  display: flex;
+  justify-content: center;
+}
+.team-box__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.team-box__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white-color;
+  fill: rgb(175, 177, 184);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    fill: $white-color;
+    background-color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,28 @@
+.current {
+  position: relative;
+  display: block;
+
+  text-decoration: none;
+  color: $accent-color;
+  // background-color: $accent-color;
+
+  @media screen and(min-width: 768px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}

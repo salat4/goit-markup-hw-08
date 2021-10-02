@@ -1,0 +1,21 @@
+.backdrop__button--send {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background: rgb(33, 150, 243);
+  border-radius: 4px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

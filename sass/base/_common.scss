@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  background: $white-color;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+section {
+  padding-top: 94px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+::after,
+::before {
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
