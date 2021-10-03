@@ -114,7 +114,8 @@
     cursor: pointer;
   }
   &:hover .project__text--overlay,
-  &:focus .project__text--overlay {
+  &:focus .project__text--overlay,
+  &:target .project__text--overlay {
     transform: translateY(0);
   }
 }

@@ -551,10 +551,11 @@ button {
 @media screen and (min-width: 480px) {
   .backdrop__modal {
     padding: 40px;
+    width: 450px;
   }
 }
 
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 1200px) {
   .backdrop__modal {
     width: 528px;
   }
@@ -847,20 +848,20 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: -15px;
-  margin-top: -13px;
+  margin-top: -14px;
 }
 
 @media screen and (min-width: 426px) {
   .backdrop-checkbox__box {
     margin-left: -18px;
-    margin-top: 1px;
+    margin-top: -1px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .backdrop-checkbox__box {
     margin-left: -25px;
-    margin-top: 1px;
+    margin-top: -1px;
   }
 }
 
@@ -1010,7 +1011,13 @@ button {
   line-height: 33px;
   text-align: center;
   color: #212121;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .client__title {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2064,8 +2071,8 @@ button {
   padding-bottom: 118px;
   height: 400px;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2073,8 +2080,8 @@ button {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200@2x.jpg);
   }
 }
 
@@ -2095,15 +2102,15 @@ button {
 @media screen and (min-width: 1200px) {
   .main {
     height: 660px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero1200@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero1200@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero_mob@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mob@2x.jpg);
   }
 }
 
@@ -2315,7 +2322,8 @@ button {
 }
 
 .project__link:hover .project__text--overlay,
-.project__link:focus .project__text--overlay {
+.project__link:focus .project__text--overlay,
+.project__link:target .project__text--overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -2485,6 +2493,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-box {

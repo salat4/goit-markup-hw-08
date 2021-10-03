@@ -20,14 +20,15 @@
   animation-duration: 2000ms;
   z-index: 3;
   padding: 20px;
-
+  // width: 450px;
   @media screen and(max-width: 480px) {
     min-height: 609px;
   }
   @media screen and(min-width: 480px) {
     padding: 40px;
+    width: 450px;
   }
-  @media screen and(min-width: 581px) {
+  @media screen and(min-width: 1200px) {
     width: 528px;
   }
 }
@@ -227,15 +228,15 @@
   background-repeat: no-repeat;
   justify-content: center;
   margin-left: -15px;
-  margin-top: -13px;
+  margin-top: -14px;
 
   @media screen and(min-width: 426px) {
     margin-left: -18px;
-    margin-top: 1px;
+    margin-top: -1px;
   }
   @media screen and(min-width: 480px) {
     margin-left: -25px;
-    margin-top: 1px;
+    margin-top: -1px;
   }
   .backdrop-checkbox__inpute:checked + & {
     background-image: url(../images/checking.svg);
